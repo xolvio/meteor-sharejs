@@ -1,7 +1,9 @@
+var packageName = "xolvio:sharejs-ace";
+
 Package.describe({
-  name: "xolvio:sharejs-ace",
+  name: packageName,
   summary: "ShareJS with the Ace Editor",
-  version: "1.0.0",
+  version: "1.0.1",
   git: "https://github.com/xolvio/meteor-sharejs.git"
 });
 
@@ -61,11 +63,12 @@ Package.onUse(function (api) {
   var _ = Npm.require("underscore");
 
   // Ace editor for the client
-  var aceJS = 'ace-builds/src/ace.js';
+  var aceSrcPath = 'ace-builds/src';
+  var aceJS = aceSrcPath + '/ace.js';
   api.addFiles(aceJS, 'client', { bare: true });
 
   // Add Ace files as assets that can be loaded by the client later
-  var aceSettings = getFilesFromFolder("mizzao:sharejs-ace", "ace-builds/src");
+  var aceSettings = getFilesFromFolder(packageName, aceSrcPath);
   api.addFiles(_.without(aceSettings, aceJS), 'client', {isAsset: true});
 
   api.addFiles([

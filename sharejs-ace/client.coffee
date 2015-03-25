@@ -1,5 +1,5 @@
 # Set asset path in Ace config
-require('ace/config').set('basePath', '/packages/mizzao_sharejs-ace/ace-builds/src')
+require('ace/config').set('basePath', '/packages/xolvio_sharejs-ace/ace-builds/src')
 UndoManager = require('ace/undomanager').UndoManager
 
 class ShareJSAceConnector extends ShareJSConnector
