@@ -1,8 +1,8 @@
 Package.describe({
-  name: "mizzao:sharejs-ace",
+  name: "xolvio:sharejs-ace",
   summary: "ShareJS with the Ace Editor",
-  version: "1.1.8_1",
-  git: "https://github.com/mizzao/meteor-sharejs.git"
+  version: "1.0.0",
+  git: "https://github.com/xolvio/meteor-sharejs.git"
 });
 
 // Ugly-ass function stolen from http://stackoverflow.com/a/20794116/586086
@@ -55,7 +55,7 @@ Package.onUse(function (api) {
 
   api.use(['coffeescript', 'templating']);
 
-  api.use("mizzao:sharejs@0.7.0");
+  api.use("mizzao:sharejs@0.7.3");
   api.imply("mizzao:sharejs");
 
   var _ = Npm.require("underscore");
