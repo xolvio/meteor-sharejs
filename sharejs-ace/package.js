@@ -3,7 +3,7 @@ var packageName = "xolvio:sharejs-ace";
 Package.describe({
   name: packageName,
   summary: "ShareJS with the Ace Editor",
-  version: "1.0.2",
+  version: "1.0.3",
   git: "https://github.com/xolvio/meteor-sharejs.git"
 });
 
@@ -44,7 +44,7 @@ function getFilesFromFolder(packageName, folder){
 
   packagePath = path.resolve(packagePath);
   // chdir to our package directory
-  process.chdir(path.join(packagePath));
+  process.chdir(packagePath);
   // launch initial walk
   var result = walk(folder);
   // restore previous cwd
