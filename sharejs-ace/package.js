@@ -3,7 +3,7 @@ var packageName = "xolvio:sharejs-ace";
 Package.describe({
   name: packageName,
   summary: "ShareJS with the Ace Editor",
-  version: "1.0.5",
+  version: "1.0.6",
   git: "https://github.com/xolvio/meteor-sharejs.git"
 });
 
